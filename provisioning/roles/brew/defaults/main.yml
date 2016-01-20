@@ -1,0 +1,30 @@
+---
+homebrew_repositories: []
+
+homebrew_packages:
+  - ansible
+  - consul
+  - coreutils
+  - curl
+  - git
+  - go
+  - hub
+  - jq
+  - mysql
+  - nomad
+  - nvm
+  - openssl
+  - { name: openssl, state: linked, install_options: force }
+  - otto
+  - packer
+  - pyenv-virtualenv
+  - python
+  - rbenv
+  - redis
+  - ruby-build
+  - terraform
+  - the_silver_searcher
+  - tmux
+  - tree
+  - vault
+  - wget

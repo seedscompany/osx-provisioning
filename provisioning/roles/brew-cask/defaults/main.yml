@@ -1,0 +1,10 @@
+homebrew_cask_packages:
+  - dockertoolbox
+  - firefox
+  - google-chrome
+  - iterm2
+  - serf
+  - slack
+  - sourcetree
+  - vagrant
+  - virtualbox

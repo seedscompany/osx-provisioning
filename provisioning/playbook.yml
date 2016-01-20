@@ -1,0 +1,9 @@
+---
+- name: OSX Local Provisioner
+  hosts: localhost
+  sudo: no
+  roles:
+    # App Installations
+    - brew
+    - brew-cask
+
