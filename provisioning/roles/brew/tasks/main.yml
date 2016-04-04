@@ -21,26 +21,26 @@
 #
 - name: tap external homebrew repositories
   homebrew_tap: tap={{ item }} state=present
-  with_items: homebrew_repositories
-  when: homebrew_repositories
-  sudo: false
+  with_items: "{{homebrew_repositories}}"
+  when: "{{homebrew_repositories}}"
+  become: no
 
 - name: update homebrew
   homebrew: update_homebrew=yes
-  sudo: false
+  become: no
 
 - name: install and upgrade homebrew packages
   homebrew:
     name={{ item.name | default(item) }}
     state={{ item.state | default('latest') }}
-    install_options={{ 
+    install_options={{
       item.install_options | default() | join(',')
       if item.install_options is not string
       else item.install_options
     }}
-  with_items: homebrew_packages
-  when: homebrew_packages
-  sudo: false
+  with_items: "{{homebrew_packages}}"
+  when: "{{homebrew_packages}}"
+  become: no
 
 - name: create bin directory for golang
   file: name=~/bin state=directory
@@ -50,4 +50,3 @@
 
 - name: create src directory for golang
   file: name=~/src state=directory
-
