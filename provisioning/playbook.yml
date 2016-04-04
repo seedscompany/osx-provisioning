@@ -1,7 +1,7 @@
 ---
 - name: OSX Local Provisioner
   hosts: localhost
-  sudo: no
+  become: no
   roles:
     # App Installations
     - brew

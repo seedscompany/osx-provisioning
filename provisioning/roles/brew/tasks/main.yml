@@ -23,11 +23,11 @@
   homebrew_tap: tap={{ item }} state=present
   with_items: "{{homebrew_repositories}}"
   when: "{{homebrew_repositories}}"
-  sudo: false
+  become: no
 
 - name: update homebrew
   homebrew: update_homebrew=yes
-  sudo: false
+  become: no
 
 - name: install and upgrade homebrew packages
   homebrew:
@@ -40,7 +40,7 @@
     }}
   with_items: "{{homebrew_packages}}"
   when: "{{homebrew_packages}}"
-  sudo: false
+  become: no
 
 - name: create bin directory for golang
   file: name=~/bin state=directory
