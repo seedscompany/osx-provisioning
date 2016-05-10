@@ -3,6 +3,7 @@ homebrew_repositories: []
 
 homebrew_packages:
   - ansible
+  - awscli
   - consul
   - coreutils
   - curl
