@@ -3,8 +3,8 @@
   homebrew_tap: tap=caskroom/cask state=present
   become: no
 
-- name: update homebrew_cask
-  homebrew: name=brew-cask state=latest
+- name: update homebrew
+  homebrew: update_homebrew=yes
   become: no
 
 - name: install and upgrade homebrew_cask packages
@@ -14,3 +14,6 @@
   with_items: "{{homebrew_cask_packages}}"
   when: "{{homebrew_cask_packages}}"
   become: no
+
+- name: cleanup cached downloads
+  shell: brew cask cleanup

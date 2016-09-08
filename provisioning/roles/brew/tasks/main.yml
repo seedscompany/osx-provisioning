@@ -31,7 +31,7 @@
 
 - name: install and upgrade homebrew packages
   homebrew:
-    name={{ item.name | default(item) }}
+    name={{ item.name }}
     state={{ item.state | default('latest') }}
     install_options={{
       item.install_options | default() | join(',')
