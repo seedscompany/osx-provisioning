@@ -4,29 +4,26 @@ homebrew_repositories: []
 homebrew_packages:
   - ansible
   - awscli
-  - consul
   - coreutils
   - curl
+  - docker
+  - ghq
+  - gibo
   - git
   - glide
   - go
-  - hub
   - jq
-  - mysql
-  - nomad
   - nvm
-  - openssl
   - { name: openssl, state: linked, install_options: force }
-  - otto
   - packer
+  - peco
   - pyenv-virtualenv
   - python
   - rbenv
-  - redis
   - ruby-build
   - terraform
   - the_silver_searcher
+  - tig
   - tmux
   - tree
-  - vault
   - wget

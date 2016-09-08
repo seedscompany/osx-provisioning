@@ -1,9 +1,8 @@
 homebrew_cask_packages:
-  - dockertoolbox
+  - citrix-receiver
   - firefox
   - google-chrome
   - iterm2
   - slack
-  - sourcetree
   - vagrant
   - virtualbox
