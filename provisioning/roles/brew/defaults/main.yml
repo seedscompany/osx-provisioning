@@ -6,7 +6,6 @@ homebrew_packages:
   - awscli
   - coreutils
   - curl
-  - docker
   - ghq
   - gibo
   - git
