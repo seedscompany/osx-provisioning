@@ -8,4 +8,3 @@ function show_context() {
   echo "ANSIBLE_VERSION=${ANSIBLE_VERSION}"
 }
 
-show_context

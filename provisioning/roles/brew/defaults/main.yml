@@ -4,14 +4,18 @@ homebrew_repositories: []
 homebrew_packages:
   - { name: ansible }
   - { name: awscli }
+  - { name: bazaar }
   - { name: coreutils }
   - { name: curl }
+  - { name: direnv }
+  - { name: fleetctl }
   - { name: ghq }
   - { name: gibo }
   - { name: git }
   - { name: glide }
   - { name: go }
   - { name: jq }
+  - { name: mercurial }
   - { name: nvm }
   - { name: openssl, state: linked, install_options: force }
   - { name: packer }
