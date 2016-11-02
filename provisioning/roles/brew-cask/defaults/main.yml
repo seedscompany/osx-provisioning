@@ -4,7 +4,9 @@ homebrew_cask_packages:
   - docker
   - firefox
   - google-chrome
+  - helm
   - iterm2
+  - minikube
   - slack
   - vagrant
   - virtualbox
