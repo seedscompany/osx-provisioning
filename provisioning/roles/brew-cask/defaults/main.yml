@@ -1,12 +1,9 @@
 homebrew_cask_packages:
   - appcleaner
-  - citrix-receiver
   - docker
   - firefox
   - google-chrome
-  - helm
   - iterm2
-  - minikube
   - slack
   - vagrant
   - virtualbox

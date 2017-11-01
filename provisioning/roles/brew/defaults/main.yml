@@ -8,12 +8,11 @@ homebrew_packages:
   - { name: coreutils }
   - { name: curl }
   - { name: direnv }
-  - { name: fleetctl }
   - { name: ghq }
   - { name: gibo }
   - { name: git }
   - { name: glide }
-  - { name: go }
+  - { name: goenv }
   - { name: jq }
   - { name: mercurial }
   - { name: nvm }
