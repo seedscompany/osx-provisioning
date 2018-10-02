@@ -1,15 +1,49 @@
-## Provisioning via Ansible!
+# os-x setup
 
-just do below
+## via make
 
-```
-$ cd /path/to/repository-top && make
-```
+### dotfiles
 
-set gopath for your shell
+*customize* vim/zshrc if you use them
 
 ```
-mkdir $HOME/src $HOME/pkg $HOME/bin
-export GOPATH=$HOME
-export PATH=$PATH:$GOPATH/bin
+make all
+```
+
+### brew
+
+install tools via homebrew, Brewfile
+
+```
+make brew
+```
+
+### vim
+
+setup [vim-plug](https://github.com/junegunn/vim-plug)
+
+```
+make vim
+```
+
+## extra steps
+
+### docker
+
+install manually docker for mac version 17 via [docker-for-mac release-notes](https://docs.docker.com/docker-for-mac/release-notes/)
+
+### golang
+
+install specific version of golang
+
+```
+goenv install 1.9.2
+```
+
+### terraform
+
+install version 0.8.4 of terraform
+
+```
+tfenv install 0.8.4
 ```

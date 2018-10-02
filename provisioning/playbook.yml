@@ -1,9 +1,0 @@
----
-- name: OSX Local Provisioner
-  hosts: localhost
-  become: no
-  roles:
-    # App Installations
-    - brew
-    - brew-cask
-    - other

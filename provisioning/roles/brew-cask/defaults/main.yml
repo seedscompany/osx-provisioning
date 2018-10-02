@@ -1,9 +1,0 @@
-homebrew_cask_packages:
-  - appcleaner
-  - docker
-  - firefox
-  - google-chrome
-  - iterm2
-  - slack
-  - vagrant
-  - virtualbox

@@ -1,4 +1,0 @@
-- name: GOPATH dir
-  file: path=~/{{ item }} state=directory
-  with_items:
-      - ['bin','pkg','src']
