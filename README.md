@@ -37,7 +37,7 @@ install manually docker for mac version 17 via [docker-for-mac release-notes](ht
 install specific version of golang
 
 ```
-goenv install 1.9.2
+goenv install 1.11.4
 ```
 
 ### terraform
