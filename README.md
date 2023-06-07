@@ -30,14 +30,14 @@ make vim
 
 ### docker
 
-install manually docker for mac version 17 via [docker-for-mac release-notes](https://docs.docker.com/docker-for-mac/release-notes/)
+install manually docker for mac [docker-for-mac release-notes](https://docs.docker.com/docker-for-mac/release-notes/)
 
 ### golang
 
 install specific version of golang
 
 ```
-goenv install 1.11.4
+goenv install 1.XX.XX
 ```
 
 ### terraform
